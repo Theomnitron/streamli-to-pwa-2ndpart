@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streamlit PWA Redirect</title>
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('pwabuilder-sw.js');
+      }
+      window.location.href = "https://your-streamlit-app.streamlit.app";
+    </script>
+  </head>
+  <body>
+    <h1>Launching App...</h1>
+  </body>
+</html>
